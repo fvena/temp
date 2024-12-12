@@ -1,22 +1,22 @@
 # Pull Request
 
-## Descripción
+## Description
 
-<!-- Breve descripción de los cambios realizados. -->
+<!-- Brief description of the changes made. -->
 
 ---
 
-## Checklist antes de fusionar
+## Checklist before merging
 
-### Código y funcionalidad
+### Code and functionality
 
-- [ ] ✔️ Funcionalidad probada y funcionando como se espera.
-- [ ] 🧹 Código limpio, sin comentarios ni logs innecesarios.
-- [ ] 🧪 Tests añadidos o actualizados.
+- [ ] ✔️ Functionality tested and working as expected.
+- [ ] 🧹 Clean code, no unnecessary comments or logs.
+- [ ] 🧪 Tests added or updated.
 
-### Documentación
+### Documentation
 
-- [ ] 📘 README actualizado si es necesario.
-- [ ] ✍️ Documentación añadida o revisada.
-- [ ] 📚 Ejemplos en la documentación revisados.
-- [ ] 🌐 Web del proyecto actualizada (si aplica).
+- [ ] 📘 README updated if necessary.
+- [ ] ✍️ Documentation added or revised.
+- [ ] 📚 Examples in the documentation reviewed.
+- [ ] 🌐 Project website updated (if applicable).
