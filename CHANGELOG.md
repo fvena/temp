@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/fvena/temp/compare/v1.2.0...v1.3.0) (2024-12-12)
+
+
+### Features
+
+* remove pull_request trigger from release workflow ([b24f135](https://github.com/fvena/temp/commit/b24f135d311bcb8e45e41436d1dd73042c28c376))
+
 # [1.2.0](https://github.com/fvena/temp/compare/v1.1.0...v1.2.0) (2024-12-12)
 
 
