@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/fvena/temp/compare/v1.1.0...v1.2.0) (2024-12-12)
+
+
+### Features
+
+* add divide function to utils and export it ([9a6c4df](https://github.com/fvena/temp/commit/9a6c4dfa732c66019f50a671ed45a222a24fd2da))
+
 # [1.1.0](https://github.com/fvena/temp/compare/v1.0.0...v1.1.0) (2024-12-12)
 
 
