@@ -1,1 +1,1 @@
-export { add, subtract } from "./utils.js";
+export { add, multiply, subtract } from "./utils.js";
