@@ -14,5 +14,6 @@ export default {
       },
     ],
     "@semantic-release/github",
+    "@saithodev/semantic-release-backmerge",
   ],
 };
