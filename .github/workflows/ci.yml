@@ -38,7 +38,7 @@ jobs:
       - run: npm run test
 
   build:
-    name: Test
+    name: Build
     runs-on: ubuntu-22.04
 
     steps:

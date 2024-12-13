@@ -9,11 +9,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Gets semantic release info
         id: semantic_release_info
         uses: fingerprintjs/action-semantic-release-info@v1
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - if: ${{ steps.semantic_release_info.outputs.no_release == 'false' }}
         name: Add comment to the PR
         uses: marocchino/sticky-pull-request-comment@v2
@@ -24,6 +26,7 @@ jobs:
           # message: |
           #   ## This PR will create a ${{steps.semantic_release_info.outputs.type}} release :rocket:
           #   ${{steps.semantic_release_info.outputs.notes}}
+
       - if: ${{ steps.semantic_release_info.outputs.no_release == 'true' }}
         name: Add comment to the PR
         uses: marocchino/sticky-pull-request-comment@v2
@@ -33,11 +36,13 @@ jobs:
           path: ./.github/pr_template
           # message: |
           #   ## This PR will not create a new release :rocket:
+
       - name: Add release notes preview to the job summary
         if: ${{ steps.semantic_release_info.outputs.no_release == 'false' }}
         run: |
           echo "## This PR will create a ${{steps.semantic_release_info.outputs.type}} release :rocket:" >> $GITHUB_STEP_SUMMARY
           echo "${{steps.semantic_release_info.outputs.notes}}" >> $GITHUB_STEP_SUMMARY
+
       - name: Add release notes preview to the job summary
         if: ${{ steps.semantic_release_info.outputs.no_release == 'true' }}
         run: |
