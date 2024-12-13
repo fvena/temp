@@ -2,13 +2,26 @@ name: Add release preview comment
 
 on: [pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   release-comment:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
 
       - name: Gets semantic release info
         id: semantic_release_info
