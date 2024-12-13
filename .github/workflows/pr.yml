@@ -22,10 +22,7 @@ jobs:
         with:
           header: ReleasePreview
           recreate: true
-          path: ./.github/pr_template
-          # message: |
-          #   ## This PR will create a ${{steps.semantic_release_info.outputs.type}} release :rocket:
-          #   ${{steps.semantic_release_info.outputs.notes}}
+          path: ./.github/pr_template.md
 
       - if: ${{ steps.semantic_release_info.outputs.no_release == 'true' }}
         name: Add comment to the PR
@@ -33,9 +30,7 @@ jobs:
         with:
           header: ReleasePreview
           recreate: true
-          path: ./.github/pr_template
-          # message: |
-          #   ## This PR will not create a new release :rocket:
+          path: ./.github/pr_template.md
 
       - name: Add release notes preview to the job summary
         if: ${{ steps.semantic_release_info.outputs.no_release == 'false' }}
