@@ -2,10 +2,6 @@
 
 ## Description
 
-### This PR will create a ${{steps.semantic_release_info.outputs.type}} release :rocket:
-
-${{steps.semantic_release_info.outputs.notes}}
-
 <!-- Brief description of the changes made. -->
 
 ---
