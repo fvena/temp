@@ -6,7 +6,11 @@
 <p align="center">
 
   <h1 align="center">TypeScript Library Template Pro</h1>
+<<<<<<< HEAD
   <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf asdfasd</div>
+=======
+  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf</div>
+>>>>>>> bc0d23c (fix: enhance CI workflow by adding a build job and updating README description)
 </p>
 
 <br/>
