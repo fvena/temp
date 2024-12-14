@@ -6,7 +6,7 @@
 <p align="center">
 
   <h1 align="center">TypeScript Library Template Pro</h1>
-  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup.</div>
+  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf</div>
 </p>
 
 <br/>
@@ -240,111 +240,112 @@ If you'd like to test your library directly within the same project, the best ap
 
 1. **Set the module type**: Update the `playground/package.json` to use ESM modules:
 
-    ```json
-    {
-    "type": "module",
-    }
-    ```
+   ```json
+   {
+     "type": "module"
+   }
+   ```
 
 1. **Add the playground as a workspace**: You need install all dependencies with the `npm install` command in the root folder, to pass the CI/CD pipeline.
 
-    ```json
-    {
-      "workspaces": ["playground"]
-    }
-    ```
+   ```json
+   {
+     "workspaces": ["playground"]
+   }
+   ```
 
-    **Important**: You need to build the library before running the linting and testing scripts. Update the `ci.yml` file to include the build step before running the tests:
+   **Important**: You need to build the library before running the linting and testing scripts. Update the `ci.yml` file to include the build step before running the tests:
 
-    ```yaml
-    - run: npm ci --ignore-scripts
-    - run: npm run build
-    - run: npm run lint
-    - run: npm run typecheck
-    ```
+   ```yaml
+   - run: npm ci --ignore-scripts
+   - run: npm run build
+   - run: npm run lint
+   - run: npm run typecheck
+   ```
 
 1. **Link the Library**: Add your library as a dependency in the `playground/package.json`. For example:
 
-    ```json
-    {
-      "dependencies": {
-        "typescript-library-template-pro": "file:../"
-      }
-    }
-    ```
+   ```json
+   {
+     "dependencies": {
+       "typescript-library-template-pro": "file:../"
+     }
+   }
+   ```
 
-    **Important**: After editing the package.json, install the dependencies:
+   **Important**: After editing the package.json, install the dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ### Example for a Vanilla TypeScript Library
 
 This example demonstrates how to set up a playground to test a TypeScript library. Follow these steps:
 
-  1. **Create a Playground Folder**
+1. **Create a Playground Folder**
 
-     ```bash
-     mkdir playground
-     cd playground
-     npm init -y
-     ```
+   ```bash
+   mkdir playground
+   cd playground
+   npm init -y
+   ```
 
-  1. **Set the module type**: Update the `playground/package.json` to use ESM modules:
+1. **Set the module type**: Update the `playground/package.json` to use ESM modules:
 
-     ```json
-     {
-      "type": "module",
+   ```json
+   {
+     "type": "module"
+   }
+   ```
+
+1. **Link the Library**: Add your library as a dependency.
+
+   ```json
+   {
+     "dependencies": {
+       "typescript-library-template-pro": "file:../"
      }
-     ```
+   }
+   ```
 
-  1. **Link the Library**: Add your library as a dependency.
+   Then, install the dependencies:
 
-     ```json
-     {
-      "dependencies": {
-        "typescript-library-template-pro": "file:../"
-      }
-     }
-     ```
+   ```bash
+   npm install
+   ```
 
-     Then, install the dependencies:
+1. **Install TypeScript and Watcher**
 
-      ```bash
-      npm install
-      ```
+   ```bash
+    npm install typescript tsc-watch --save-dev
+   ```
 
-  1. **Install TypeScript and Watcher**
+1. **Update Scripts**: Add the following scripts to the `playground/package.json` file:
 
-     ```bash
-      npm install typescript tsc-watch --save-dev
-     ```
+   ```json
+   {
+    ...
+    "scripts": {
+      "dev": "tsc-watch --noClear --onSuccess \"node ./dist/index.js\"",
+      "build": "tsc"
+    },
+   }
+   ```
 
-  1. **Update Scripts**: Add the following scripts to the `playground/package.json` file:
+1. **Test your library**: Add a file, `index.ts`, in the `playground` folder:
 
-     ```json
-     {
-      ...
-      "scripts": {
-        "dev": "tsc-watch --noClear --onSuccess \"node ./dist/index.js\"",
-        "build": "tsc"
-      },
-     }
-     ```
+   ```typescript
+   import { add } from "typescript-library-template-pro";
 
-  1. **Test your library**: Add a file, `index.ts`, in the `playground` folder:
+   console.log(add(1, 2));
+   ```
 
-     ```typescript
-     import { add } from "typescript-library-template-pro";
+1. **Run both projects**: Run the library and the playground in separate terminals in watch mode:
 
-     console.log(add(1, 2));
-
-  1. **Run both projects**: Run the library and the playground in separate terminals in watch mode:
-
-     ```bash
-      npm run dev
-     ```
+   ```bash
+    npm run dev
+   ```
 
 ### Example for a Browser Library
 
@@ -370,7 +371,7 @@ This example demonstrates how to set up a playground to test a library that work
 
    ```bash
     npm install
-    ```
+   ```
 
 1. **Test your library**: Add library imports to the playground code, where you can test it:
 
@@ -380,9 +381,9 @@ This example demonstrates how to set up a playground to test a library that work
 
 1. **Run both projects**: Run the library and the playground in separate terminals in watch mode:
 
-     ```bash
-      npm run dev
-     ```
+   ```bash
+    npm run dev
+   ```
 
 ## 🧩 FAQs
 
@@ -402,7 +403,7 @@ This example demonstrates how to set up a playground to test a library that work
 
 1. **Update TypeScript Configuration**: Add browser-specific settings to your `tsconfig.json` file:
 
-   ```json
+   ````json
    {
      "compilerOptions": {
        "lib": ["ESNext", "DOM"],
@@ -419,7 +420,7 @@ This example demonstrates how to set up a playground to test a library that work
    {
       "extends": "personal-style-guide/typescript/browser"
    }
-   ```
+   ````
 
 1. **Configure EsLint**: If your library uses browser-specific APIs, update the ESLint configuration to include the browser environment:
 
