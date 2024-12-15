@@ -6,7 +6,7 @@
 <p align="center">
 
   <h1 align="center">TypeScript Library Template Pro</h1>
-  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf</div>
+  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf asdfasd</div>
 </p>
 
 <br/>
