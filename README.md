@@ -6,7 +6,7 @@
 <p align="center">
 
   <h1 align="center">TypeScript Library Template Pro</h1>
-  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa</div>
+  <div align="center">A simple, professional, and modern template for building and maintaining TypeScript libraries. This template integrates the best tools, workflows, and practices to help you focus on developing your library without worrying about setup. asdfadfs asdfa asdf asdfasd</div>
 </p>
 
 <br/>
@@ -15,6 +15,10 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/fvena/typescript-library-template-pro)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fvena_temp&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fvena_temp)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fvena_temp&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fvena_temp)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=fvena_temp&metric=coverage)](https://sonarcloud.io/summary/new_code?id=fvena_temp)
 
 </div>
 
