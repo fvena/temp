@@ -52,7 +52,8 @@ jobs:
 
   sonarqube:
     name: SonarQube
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    needs: [test, lint]
     steps:
       - uses: actions/checkout@v4
         with:
