@@ -1,0 +1,7 @@
+runtimes:
+  - node@22.2.0
+tools:
+  - eslint@9.17.0
+engines:
+  eslint:
+    config_file: eslint.config.js
